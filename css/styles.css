@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    background-color: #fbdb7c;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Inicio diseño header */
+
+.header {
+    background-image: url("../imagenes/banners/banner2.jpg");
+    height: 20%;
+    border-bottom: black 1.5px outset;
+}
+
+#logoConeja{
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+
+}
+.Nav {
+    padding-top: 120px;
+
+}
+
+.menuNav li {
+    text-align: center;
+           margin-left: 15px;
+           margin-right: 15px;
+}
+
+.nosotrosBtn,
+.contactoBtn,
+.galeriaBtn,
+.ubicacionBtn,
+.menuBtn,
+.tiendaBtn {
+    transition: all 0.3s;
+}
+
+.nosotrosBtn:hover,
+.contactoBtn:hover,
+.galeriaBtn:hover,
+.ubicacionBtn:hover,
+.menuBtn:hover,
+.tiendaBtn:hover {
+    text-shadow: 1.5px 1.5px 2.5px rgba(0, 0, 0, 0.623);
+    transform: scale(1.05);
+}
+
+.menuNav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.logoMedio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    transition: all 0.3s;
+}
+
+.logoMedio:hover {
+    transform: scale(1.05);
+}
+
+/* Fin diseño Header */
+
+/* Inicio diseño Footer */
+
+footer {
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    border-top: black 1.5px outset;
+}
+
+/* Fin diseño Footer */
+
+/* Inicio diseño Index */
+
+main {
+    background-color: #ffe494;
+}
+
+#introContacto {
+    font-family: 'Caveat', cursive;
+    padding-top: 20px;
+    text-align: center;
+    border-bottom: black 1.5px outset;
+}
+
+.intro {
+    font-size: 36px;
+}
+
+.intro img {
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.contacto {
+    padding: 50px;
+}
+
+#informacion {
+    background-image: url("../imagenes/banners/banner1.jpg");
+    font-family: 'Lato', sans-serif;
+    height: 424px;
+}
+
+.infoTotal {
+    padding-top: 15px;
+    width: auto;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-areas:
+        "mapa datos"
+        "mapa redes";
+    justify-content: center;
+
+}
+
+.infoMap {
+    border-color: black transparent 4 inherit;
+    grid-area: mapa;
+}
+
+.infoDatos {
+    grid-area: datos;
+
+}
+
+.infoDatos li {
+    padding: 5px;
+}
+
+.infoRedes {
+    grid-area: redes;
+    display: flex;
+    align-items: flex-end;
+}
+
+.infoRedes a {
+    transition: all 0.2s;
+}
+
+.infoRedes a:hover {
+    transform: scale(1.05);
+}
+
+/* Fin diseño Index */
+
+
+/* Inicio diseño Nosotros */
+
+#nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+    background-color: #ffe494;
+    height: 800px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 35px;
+}
+
+.infoNos {
+    max-height: 600px;
+    max-width: 600px;
+    padding: 0;
+}
+
+.imgNos {
+    max-height: 600px;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 50px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.infoNos h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Fin diseño Nosotros */
+
+
+/* Inicio diseño Menu */
+
+#menu {
+    background-image: url("../imagenes/zanahorias.jpg");
+}
+
+#menu div {
+    text-align: center;
+    padding: 50px;
+}
+
+#menu img {
+    padding: 20px;
+}
+
+/* Fin diseño Menu */
+
+/* Inicio diseño Tienda */
+
+.tienda {
+    display: flex;
+    justify-content: center;
+    height: 800px;
+}
+
+.tienda img {
+    height: 700px;
+    width: 700px;
+}
+
+/* Fin diseño Tienda */
+
+
+
+/* Diseño Mobile */
+
+@media screen and (max-width: 800px) {
+
+    .infoTotal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .imgDecorado {
+        display: none;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    #menu img {
+        width: 90%;
+    }
+
+    #nosotros {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoNos {
+        width: 100%;
+    }
+
+    #informacion {
+        background-image: none;
+        height: 100%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    /* Index Mobile */
+    .header {
+        max-height: 250px;
+    }
+
+    .logoMedio {
+        width: 120px;
+    }
+
+    .Nav {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .intro {
+        font-size: x-large;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro p {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .imgCuadro {
+        display: none;
+    }
+
+    .imgDecorado {
+        display: none;
+    }
+
+    #informacion {
+        background-image: none;
+        height: 100%;
+    }
+
+    .infoTotal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .infoMap {
+        width: 80%;
+    }
+
+    .imgExterior {
+        width: 90%;
+    }
+
+    .header {
+        background-image: none;
+        background-color: #fbdb7c;
+        height: 200px;
+        width: 100%;
+    }
+
+    .menuNav {
+        font-size: large;
+    }
+
+    /* Index Mobile */
+
+    /* Menu Mobile */
+
+    #menu {
+        width: 100%;
+    }
+
+    #menu img {
+        width: 90%;
+    }
+
+    /* Footer Mobile */
+
+    footer {
+        font-size: x-small;
+    }
+
+    /* Nosotros Mobile */
+
+    #nosotros {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoNos {
+        font-size: x-large;
+        padding-bottom: 20px;
+    }
+
+    .infoNos p{
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .imgNos {
+        width: 90%;
+        background-color: #ffe494;
+    }
+
+    .imgNos img {
+        width: 100%;
+    }
+
+    /* Tienda Mobile */
+
+    .tienda img{
+        width: 100%;
+        height: 70%;
+    }
+    }
