@@ -23,9 +23,11 @@ ul {
 /* Inicio diseño header */
 
 .header {
+    background-color: #fbdb7c;
     background-image: url("../imagenes/banners/banner2.jpg");
+    background-repeat: no-repeat;
     height: 35%;
-    border-bottom: black 1.5px outset;
+    border-bottom: rgb(255, 255, 255) 1.5px outset;
 }
 
 #logoConeja{
@@ -74,6 +76,7 @@ ul {
     font-family: 'Lato', sans-serif;
     font-size: 25px;
     font-weight: 400;
+    margin-bottom: 0;
 }
 
 .logoMedio {
@@ -95,7 +98,6 @@ ul {
 /* Inicio diseño Footer */
 
 footer {
-    padding: 10px;
     font-family: 'Lato', sans-serif;
     text-align: center;
     border-top: black 1.5px outset;
@@ -114,7 +116,7 @@ main {
     font-family: 'Caveat', cursive;
     padding-top: 20px;
     text-align: center;
-    border-bottom: black 1.5px outset;
+    border-bottom: rgb(255, 255, 255) 1.5px outset;
 }
 
 .intro {
@@ -128,13 +130,10 @@ main {
     max-height: 100%;
 }
 
-.carouselContenedor {
+.carousel {
     display: flex;
-}
-
-.carouselImg {
-    height: 500px;
-    width: 500px;
+    margin: 0 auto;
+    max-width: 424px;
 }
 
 .contacto {
@@ -144,11 +143,11 @@ main {
 #informacion {
     background-image: url("../imagenes/banners/banner1.jpg");
     font-family: 'Lato', sans-serif;
-    height: 424px;
+    height: 434px;
+    padding-top: 5px;
 }
 
 .infoTotal {
-    padding-top: 15px;
     width: auto;
     display: grid;
     grid-column-gap: 10px;
@@ -156,17 +155,17 @@ main {
         "mapa datos"
         "mapa redes";
     justify-content: center;
+    align-items: center;
 
 }
 
 .infoMap {
-    border-color: black transparent 4 inherit;
     grid-area: mapa;
 }
 
 .infoDatos {
     grid-area: datos;
-
+    padding-left: 10px;
 }
 
 .infoDatos li {
@@ -174,6 +173,7 @@ main {
 }
 
 .infoRedes {
+    padding-left: 10px;
     grid-area: redes;
     display: flex;
     align-items: flex-end;
@@ -199,8 +199,7 @@ main {
     font-family: 'Caveat', cursive;
     background-color: #ffe494;
     height: 800px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px;
     font-size: 35px;
 }
 
@@ -211,12 +210,13 @@ main {
 }
 
 .imgNos {
-    max-height: 600px;
-    padding-top: 50px;
-    padding-left: 40px;
-    padding-right: 50px;
     background-color: #ffffff;
     padding: 5px;
+}
+
+.imgNos img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .infoNos h1 {
