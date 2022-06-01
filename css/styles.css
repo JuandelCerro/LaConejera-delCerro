@@ -22,14 +22,19 @@ ul {
 
 /* Inicio diseño header */
 
+.separacion {
+    height: 35px;
+    background-color: #ffe494a8;
+    border-bottom: rgb(255, 255, 255) 1.5px outset;
+}
+
 .Nav {
     background-image: url(../imagenes/banners/banner.jpg);
     padding: 0;
 }
 
 .header {
-    background-color: #fbdb7c;
-    height: 35%;
+    /* background-color: #fbdb7c; */
     border-bottom: rgb(255, 255, 255) 1.5px outset;
 }
 
@@ -90,7 +95,7 @@ ul {
 footer {
     font-family: 'Lato', sans-serif;
     text-align: center;
-    border-top: black 1.5px outset;
+    border-top: rgba(0, 0, 0, 0.336) 1.5px outset;
     background-color: #fbdb7c;
 }
 
