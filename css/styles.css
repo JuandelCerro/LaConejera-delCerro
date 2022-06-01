@@ -29,12 +29,11 @@ ul {
 }
 
 .Nav {
-    background-image: url(../imagenes/banners/banner.jpg);
+    background-image: url("../imagenes/banners/banner.jpg");
     padding: 0;
 }
 
 .header {
-    /* background-color: #fbdb7c; */
     border-bottom: rgb(255, 255, 255) 1.5px outset;
 }
 
@@ -285,7 +284,20 @@ html {
 
 /* Diseño Mobile */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 980px) {
+    
+    .Nav {
+        background-image: none;
+        background-color: #fbdb7c;
+    }
+
+    .menuNav {
+        padding: 0;
+    }
+
+    .Nav ul {
+        border-top: rgba(0, 0, 0, 0.336) 1.5px outset;
+    }
 
     .infoTotal {
         display: flex;
@@ -329,12 +341,16 @@ html {
     /* Index Mobile */
 
     .logoMedio {
-        width: 120px;
+        width: 100px;
     }
 
     .Nav {
-        margin-top: 20px;
-        padding: 0;
+        background-image: none;
+        background-color: #fbdb7c;
+    }
+
+    .Nav ul {
+            border-top: rgba(0, 0, 0, 0.336) 1.5px outset;
     }
 
     .intro {
@@ -366,15 +382,9 @@ html {
         width: 80%;
     }
 
-    .header {
-        background-image: none;
-        background-color: #fbdb7c;
-        height: 100%;
-        width: 100%;
-    }
-
     .menuNav {
         font-size: large;
+        padding: 0;
     }
 
     /* Index Mobile */
