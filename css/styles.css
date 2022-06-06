@@ -34,10 +34,10 @@ ul {
 }
 
 .header {
-    border-bottom: rgb(255, 255, 255) 1.5px outset;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.7);
 }
 
-#logoConeja{
+#logoConeja {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
@@ -46,8 +46,8 @@ ul {
 
 .menuNav li {
     text-align: center;
-           margin-left: 15px;
-           margin-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .nosotrosBtn,
@@ -98,7 +98,7 @@ footer {
     background-color: #fbdb7c;
 }
 
-footer p{
+footer p {
     margin: 0 !important;
 }
 
@@ -118,7 +118,9 @@ main {
 }
 
 .intro {
-    font-size: 36px;
+    font-size: 50px;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .intro img {
@@ -149,9 +151,43 @@ main {
     padding: 10px;
 }
 
+
+/* Inicio Contacto */
 .contacto {
     padding: 50px;
 }
+
+.container {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+    background-color: #fbdb7c8e;
+    width: 50%;
+}
+
+.brand {
+    padding-top: 20px;
+}
+
+.enviarBtn {
+    padding-bottom: 20px;
+}
+
+button {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contacto p {
+    font-size: x-large;
+}
+
+input,
+textarea,
+label {
+    width: 70%;
+}
+
+
+/* Fin  Contacto */
 
 #informacion {
     background-image: url("../imagenes/banners/banner1.jpg");
@@ -262,8 +298,8 @@ main {
 
 
 .tienda {
-    background: rgb(251,219,124);
-    background: linear-gradient(0deg, rgba(251,219,124,1) 0%, rgba(255,255,255,1) 50%, rgba(251,219,124,1) 100%);
+    background: rgb(251, 219, 124);
+    background: linear-gradient(0deg, rgba(251, 219, 124, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(251, 219, 124, 1) 100%);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -283,16 +319,17 @@ main {
     -webkit-background-clip: text;
     background-clip: text;
     animation: shade 5s linear infinite;
-  }
-  
-  @keyframes shade {
+}
+
+@keyframes shade {
     0% {
-      background-position-x: -500%;
+        background-position-x: -500%;
     }
+
     100% {
-      background-position-x: 500%;
+        background-position-x: 500%;
     }
-  }
+}
 
 /* Fin diseño Tienda */
 
@@ -301,7 +338,7 @@ main {
 /* Diseño Mobile */
 
 @media screen and (max-width: 980px) {
-    
+
     .Nav {
         background-image: none;
         background-color: #fbdb7c;
@@ -366,7 +403,7 @@ main {
     }
 
     .Nav ul {
-            border-top: rgba(0, 0, 0, 0.336) 1.5px outset;
+        border-top: rgba(0, 0, 0, 0.336) 1.5px outset;
     }
 
     .intro {
@@ -434,7 +471,7 @@ main {
         padding-bottom: 20px;
     }
 
-    .infoNos p{
+    .infoNos p {
         width: 100%;
         text-align: center;
         padding: 0px;
@@ -449,4 +486,4 @@ main {
         width: 100%;
     }
 
-    }
+}
