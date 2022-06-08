@@ -1,0 +1,15 @@
+#menu {
+    background-color: $bg-color;
+    background-image: $bg-image;
+    background-attachment: $bg-atch;
+
+    div {
+        text-align: center;
+        padding: 50px;
+
+        img {
+            margin: 20px;
+            box-shadow: $bx-shadow;
+        }
+    }
+}

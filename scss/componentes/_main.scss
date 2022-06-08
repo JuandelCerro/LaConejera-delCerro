@@ -1,0 +1,44 @@
+main {
+    background-image: $bg-image;
+    background-color: $bg-color;
+    background-attachment: $bg-atch;
+
+    #introContacto {
+        font-family: $font;
+        padding-top: 20px;
+        text-align: center;
+        border-bottom: rgb(255, 255, 255) 1.5px outset;
+
+        .intro {
+            font-size: 36px;
+
+            img {
+                background-color: #fbdb7c;
+                padding: 5px;
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        .carouselCont {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100%;
+
+            .carousel {
+                max-width: 424px;
+
+                .carousel-item {
+                    background-color: #fbdb7c;
+                    padding: 5px;
+                }
+            }
+
+            .eventoImg {
+                box-shadow: $bx-shadow;
+            }
+        }
+    }
+}

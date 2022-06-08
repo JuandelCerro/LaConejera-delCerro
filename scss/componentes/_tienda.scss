@@ -1,0 +1,32 @@
+.tienda {
+    background-color: $bg-color;
+    background-image: $bg-image;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-family: 'Lato', sans-serif;
+        font-size: xx-large;
+        text-align: center;
+        line-height: 1;
+        letter-spacing: 4px;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(90deg, black, rgb(0, 0, 0), black);
+        background-size: 70% 100%;
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: shade 5s linear infinite;
+    }
+}
+
+@keyframes shade {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }

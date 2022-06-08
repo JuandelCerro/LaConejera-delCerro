@@ -1,0 +1,32 @@
+#nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+    background-color: $bg-color;
+    background-image: $bg-image;
+    height: 800px;
+    padding: 40px;
+    font-size: 35px;
+
+    .infoNos {
+        max-height: 600px;
+        max-width: 600px;
+        padding: 0;
+
+        h1 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+
+    .imgNos {
+        background-color: #fbdb7c;
+        padding: 5px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.contacto {
+    padding: 50px;
+
+    .container {
+        box-shadow: $bx-shadow;
+        background-color: $bg-color-sec;
+        width: 50%;
+
+        .brand {
+            padding-top: 20px;
+        }
+
+        .enviarBtn {
+            padding-bottom: 20px;
+        }
+
+        button {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        input,
+        textarea {
+            width: 70%;
+        }
+
+        p {
+            font-size: x-large;
+        }
+
+    }
+}

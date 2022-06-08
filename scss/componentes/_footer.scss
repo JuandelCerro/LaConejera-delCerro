@@ -1,0 +1,10 @@
+footer {
+    font-family: $font;
+    text-align: center;
+    border-top: rgba(0, 0, 0, 0.336) 1.5px outset;
+    background-color: $bg-color-sec;
+
+    p {
+        margin: 0 !important;
+    }
+}

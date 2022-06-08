@@ -1,0 +1,38 @@
+@import "../scss/base/variables";
+@import "../scss/base/maps";
+@import "../scss/componentes/header";
+@import "../scss/componentes/main";
+@import "../scss/componentes/footer";
+@import "../scss/componentes/menu";
+@import "../scss/componentes/contacto";
+@import "../scss/componentes/redes";
+@import "../scss/componentes/nosotros";
+@import "../scss/componentes/tienda";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    background-color: $bg-color;
+    background-image: $bg-image;
+    background-attachment: $bg-atch;
+    list-style: none;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+
+

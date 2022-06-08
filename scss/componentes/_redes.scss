@@ -1,0 +1,47 @@
+#informacion {
+    background-image: url("../imagenes/banners/banner1.jpg");
+    font-family: $font;
+    height: 434px;
+    padding-top: 5px;
+
+    .infoTotal {
+        width: auto;
+        display: grid;
+        grid-column-gap: 10px;
+        grid-template-areas:
+            "mapa datos"
+            "mapa redes";
+        justify-content: center;
+        align-items: center;
+
+        .infoMap {
+            grid-area: mapa;
+        }
+
+        .infoDatos {
+            font-size: large;
+            color: black;
+            margin-bottom: 0 !important;
+            grid-area: datos;
+            padding-left: 10px;
+
+            li {
+                padding: 5px;
+            }
+        }
+
+        .infoRedes {
+            padding-left: 10px;
+            grid-area: redes;
+            display: flex;
+            align-items: flex-end;
+
+            a {
+                transition: all 0.2s;
+                &:hover {
+                    transform: scale(1.07);
+                }
+            }
+        }
+    }
+}
