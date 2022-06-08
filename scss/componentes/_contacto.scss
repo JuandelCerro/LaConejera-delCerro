@@ -1,7 +1,15 @@
 .contacto {
+    display: flex;
+    align-items: center;
     padding: 50px;
+    height: 80vh;
+    background-image: $bg-image;
+    background-color: $bg-color;
+    background-attachment: $bg-atch;
 
     .container {
+        font-family: 'Lato', sans-serif;
+        text-align: center;
         box-shadow: $bx-shadow;
         background-color: $bg-color-sec;
         width: 50%;
