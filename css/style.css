@@ -3,7 +3,7 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
 }
 .header .Nav {
-  background-image: url("/imagenes/banners/banner.jpg");
+  background-image: url("/imagenes/banners/banner-header.jpg");
   bottom: rgba(251, 236, 189, 0.8784313725);
   padding: 0;
   border-bottom: rgba(0, 0, 0, 0.336) 1.5px outset;
