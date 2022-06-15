@@ -30,3 +30,43 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    #nosotros {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoNos {
+        font-size: x-large;
+        padding-bottom: 20px;
+    }
+
+    .infoNos p {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .imgNos {
+        width: 90%;
+        background-color: #ffe494;
+    }
+
+    .imgNos img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #nosotros {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoNos {
+        width: 100%;
+    }
+}

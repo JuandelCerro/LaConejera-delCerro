@@ -38,9 +38,50 @@
 
             a {
                 transition: all 0.2s;
+
                 &:hover {
                     transform: scale(1.07);
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #informacion {
+        background-image: none;
+        background-color: $bg-color-sec;
+        height: 100%;
+
+        .infoTotal {
+            display: flex;
+            flex-direction: column !important;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+
+            .infoMap {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #informacion {
+        background-image: none;
+        background-color: $bg-color-sec;
+        height: 100%;
+
+        .infoTotal {
+            display: flex;
+            flex-direction: column !important;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+
+            .infoMap {
+                width: 80%;
             }
         }
     }
