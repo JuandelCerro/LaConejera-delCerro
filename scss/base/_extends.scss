@@ -3,3 +3,15 @@
     align-items: center;
     justify-items: center;
 }
+
+%itemTienda {
+    text-align: center;
+    border: none;
+    background: none;
+}
+
+%imgTienda {
+    box-shadow: $bx-shadow;
+    border-radius: 30px;
+    padding: 5px;
+}

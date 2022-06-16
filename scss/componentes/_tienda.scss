@@ -1,32 +1,91 @@
 .tienda {
-  background-color: $bg-color;
-  background-image: $bg-image;
-  height: 100vh;
-  @extend %display;
-  justify-content: center;
+  font-family: $font2;
+  padding: 50px;
+  display: grid;
+  justify-items: center;
+  justify-content: space-evenly;
+  grid-row-gap: 15px;
+  grid-template-areas: 
+    "item1 item2 item3"
+    "item4 item5 item6"
+    "item7 item8 item9";
 
-  p {
-    font-family: $font2;
-    font-size: xx-large;
-    text-align: center;
-    line-height: 1;
-    letter-spacing: 4px;
-    -webkit-text-fill-color: transparent;
-    background: linear-gradient(90deg, black, rgb(0, 0, 0), black);
-    background-size: 70% 100%;
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: shade 5s linear infinite;
-  }
-}
-
-@keyframes shade {
-  0% {
-    background-position-x: -500%;
+  .item1 {
+    grid-area: item1;
+    @extend %itemTienda;
+    img {
+      @extend %imgTienda
+    }
   }
 
-  100% {
-    background-position-x: 500%;
+  .item2 {
+    grid-area: item2;
+    @extend %itemTienda;
+    img {
+      @extend %imgTienda
+    }
+  }
+
+  .item3 {
+    grid-area: item3;
+    @extend %itemTienda;
+    img {
+      @extend %imgTienda
+    }
+  }
+
+  .item4 {
+    grid-area: item4;
+    @extend %itemTienda;
+    img {
+      @extend %imgTienda
+    }
+  }
+
+  .item5 {
+    grid-area: item5;
+    @extend %itemTienda;
+    img {
+      @extend %imgTienda
+    }
+  }
+
+  .item6 {
+    grid-area: item6;
+    @extend %itemTienda;  
+    img {
+      @extend %imgTienda
+    }
+  }
+
+  .item7 {
+    grid-area: item7;
+    @extend %itemTienda;
+    img {
+      @extend %imgTienda
+    }
+  }
+
+  .item8 {
+    grid-area: item8;  
+    @extend %itemTienda;
+    img {
+      @extend %imgTienda
+    } 
+  }
+
+  .item9 {
+    grid-area: item9;
+    @extend %itemTienda;
+    img {
+      @extend %imgTienda
+    }
+  }
+
+  .btnTienda {
+    box-shadow: $bx-shadow;
+    border-radius: 10px;
+    background-color: $bg-color-sec;
+    border: $bd-color;
   }
 }
