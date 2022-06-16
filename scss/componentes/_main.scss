@@ -15,8 +15,7 @@ main {
             img {
                 background-color: $bg-color-sec;
                 padding: 5px;
-                max-width: 100%;
-                max-height: 100%;
+                @include fullsize;
             }
         }
 

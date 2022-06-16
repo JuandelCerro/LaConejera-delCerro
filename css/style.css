@@ -1,3 +1,9 @@
+.tienda, #nosotros, .contacto, main #introContacto .carouselCont {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
 .header {
   margin-top: 35px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
@@ -304,6 +310,7 @@ footer p {
   }
 }
 #nosotros {
+  height: 80vh;
   justify-content: space-evenly;
   font-family: "Caveat", cursive;
   background-color: rgba(251, 236, 189, 0.8784313725);
@@ -397,12 +404,6 @@ footer p {
     background-position-x: 500%;
   }
 }
-main #introContacto .carouselCont, .contacto, #nosotros, .tienda {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
-
 * {
   margin: 0;
   padding: 0;
