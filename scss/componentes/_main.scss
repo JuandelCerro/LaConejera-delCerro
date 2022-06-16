@@ -13,7 +13,7 @@ main {
             font-size: 36px;
 
             img {
-                background-color: #fbdb7c;
+                background-color: $bg-color-sec;
                 padding: 5px;
                 max-width: 100%;
                 max-height: 100%;
@@ -21,10 +21,9 @@ main {
         }
 
         .carouselCont {
-            display: flex;
+            @extend %display;
             flex-direction: row;
             justify-content: space-evenly;
-            align-items: center;
             height: 100%;
             padding-bottom: 100px;
 
@@ -32,7 +31,7 @@ main {
                 max-width: 424px;
 
                 .carousel-item {
-                    background-color: #fbdb7c;
+                    background-color: $bg-color-sec;
                     padding: 5px;
                 }
             }
@@ -40,6 +39,35 @@ main {
             .eventoImg {
                 box-shadow: $bx-shadow;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .carouselCont {
+        flex-direction: column !important;
+        padding-bottom: 50px !important;
+        margin: 0 auto !important;
+        width: 90%;
+
+        .carousel {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .carouselCont {
+        flex-direction: column !important;
+        padding-bottom: 50px !important;
+        margin: 0 auto !important;
+
+        .carousel {
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
     }
 }

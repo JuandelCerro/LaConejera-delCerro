@@ -1,13 +1,14 @@
-@import "../scss/base/variables";
-@import "../scss/base/maps";
-@import "../scss/componentes/header";
-@import "../scss/componentes/main";
-@import "../scss/componentes/footer";
-@import "../scss/componentes/menu";
-@import "../scss/componentes/contacto";
-@import "../scss/componentes/redes";
-@import "../scss/componentes/nosotros";
-@import "../scss/componentes/tienda";
+@import "./base/variables";
+@import "./base/maps";
+@import "./componentes/header";
+@import "./componentes/main";
+@import "./componentes/footer";
+@import "./componentes/menu";
+@import "./componentes/contacto";
+@import "./componentes/redes";
+@import "./componentes/nosotros";
+@import "./componentes/tienda";
+@import "./base/extends";
 
 
 * {
