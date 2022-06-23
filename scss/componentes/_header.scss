@@ -36,6 +36,12 @@
                 text-shadow: 1.5px 1.5px 2.5px rgba(0, 0, 0, 0.623);
                 transform: map-get($header, scale);
             }
+
+            &:active{
+                color: rgba(255, 255, 255, 0.733);
+            }
+
+            
         }
 
         .menuNav {

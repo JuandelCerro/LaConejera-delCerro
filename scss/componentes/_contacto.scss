@@ -24,6 +24,14 @@
         button {
             padding-left: 10px;
             padding-right: 10px;
+            border-radius: 5px;
+            transition: all 0.2s;
+
+            &:hover {
+                color: grey;
+                transform: map-get($header, scale);
+                border-color: grey;
+            }
         }
 
         input,
