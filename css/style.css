@@ -1,4 +1,4 @@
-#nosotros, .contacto, main #introContacto .carouselCont {
+#nosotros, .contacto, main #mainPage .carouselCont {
   display: flex;
   align-items: center;
   justify-items: center;
@@ -12,8 +12,7 @@
 
 .tienda .item9 img, .tienda .item8 img, .tienda .item7 img, .tienda .item6 img, .tienda .item5 img, .tienda .item4 img, .tienda .item3 img, .tienda .item2 img, .tienda .item1 img {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
-  border-radius: 30px;
-  padding: 5px;
+  border-radius: 10px;
 }
 
 .header {
@@ -83,47 +82,49 @@ main {
   background-color: rgba(251, 236, 189, 0.8784313725);
   background-attachment: fixed;
 }
-main #introContacto {
+main #mainPage {
   font-family: "Caveat", cursive;
-  padding-top: 20px;
+  padding-top: 50px;
   text-align: center;
-  border-bottom: rgb(255, 255, 255) 1.5px outset;
 }
-main #introContacto .intro {
+main #mainPage .intro {
   font-size: 36px;
-  height: 100% !important;
   background-color: rgba(255, 228, 148, 0.6588235294);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
 }
-main #introContacto .intro p {
+main #mainPage .intro p {
   margin: 0 !important;
   padding: 10px;
 }
-main #introContacto .intro img {
+main #mainPage .intro img {
   background-color: #fbdb7c;
   padding: 5px;
   max-width: 100%;
   max-height: 100%;
 }
-main #introContacto .carouselCont {
+main #mainPage .carouselCont {
   flex-direction: row;
   justify-content: space-evenly;
   height: 100%;
   padding-bottom: 100px;
   padding-top: 50px;
 }
-main #introContacto .carouselCont .carousel {
+main #mainPage .carouselCont .carousel {
   max-width: 424px;
 }
-main #introContacto .carouselCont .carousel .carousel-item {
+main #mainPage .carouselCont .carousel .carousel-item {
   background-color: #fbdb7c;
   padding: 5px;
 }
-main #introContacto .carouselCont .eventoImg {
+main #mainPage .carouselCont .eventoImg {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
 }
 
 @media screen and (max-width: 480px) {
+  .intro {
+    font-size: 26px !important;
+  }
+
   .carouselCont {
     flex-direction: column !important;
     padding-bottom: 50px !important;
@@ -203,7 +204,7 @@ footer p {
   background-attachment: fixed;
 }
 .contacto .container {
-  font-family: "Lato", sans-serif;
+  font-family: "Caveat", cursive;
   text-align: center;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
   background-color: #fbdb7c;
@@ -273,8 +274,9 @@ footer p {
 #informacion {
   background-image: url("../imagenes/banners/banner1.jpg");
   font-family: "Caveat", cursive;
-  height: 434px;
+  height: 445px;
   padding-top: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
 }
 #informacion .infoTotal {
   width: auto;
@@ -288,14 +290,14 @@ footer p {
   grid-area: mapa;
 }
 #informacion .infoTotal .infoDatos {
-  font-size: large;
+  font-size: 20px;
   color: black;
   margin-bottom: 0 !important;
   grid-area: datos;
   padding-left: 10px;
 }
 #informacion .infoTotal .infoDatos li {
-  padding: 5px;
+  padding: 4px;
 }
 #informacion .infoTotal .infoRedes {
   padding-left: 10px;
@@ -408,6 +410,9 @@ footer p {
 
   .infoNos {
     width: 100%;
+  }
+  .infoNos p {
+    text-align: justify;
   }
 }
 .tienda {

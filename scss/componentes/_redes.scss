@@ -1,8 +1,9 @@
 #informacion {
     background-image: url("../imagenes/banners/banner1.jpg");
     font-family: $font;
-    height: 434px;
+    height: 445px;
     padding-top: 5px;
+    box-shadow: $bx-shadow;
 
     .infoTotal {
         width: auto;
@@ -19,14 +20,14 @@
         }
 
         .infoDatos {
-            font-size: large;
+            font-size: 20px;
             color: black;
             margin-bottom: 0 !important;
             grid-area: datos;
             padding-left: 10px;
 
             li {
-                padding: 5px;
+                padding: 4px;
             }
         }
 

@@ -3,15 +3,13 @@ main {
     background-color: $bg-color;
     background-attachment: $bg-atch;
 
-    #introContacto {
+    #mainPage {
         font-family: $font;
-        padding-top: 20px;
+        padding-top: 50px;
         text-align: center;
-        border-bottom: rgb(255, 255, 255) 1.5px outset;
 
         .intro {
             font-size: 36px;
-            height: 100% !important;
             background-color: $bg-color-ter;
             box-shadow: $bx-shadow;
 
@@ -52,6 +50,10 @@ main {
 }
 
 @media screen and (max-width: 480px) {
+
+    .intro {
+        font-size: 26px !important;
+    }
 
     .carouselCont {
         flex-direction: column !important;
