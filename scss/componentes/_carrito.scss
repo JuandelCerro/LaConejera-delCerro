@@ -1,0 +1,37 @@
+.carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .carritoContenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 60%;
+        background-color: $bg-color-sec;
+        box-shadow: $bx-shadow;
+        border-radius: 15px;
+
+        .carritoLista {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 20px;
+            width: 80%;
+            height: 80%;
+            background-color: $bg-color;
+            border-radius: 15px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+
+            li {
+                padding: 5px;
+                width: 80%;
+                background-color: white;
+            }
+        }
+    }
+}

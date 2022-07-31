@@ -1,13 +1,12 @@
 #nosotros {
     @extend %display;
-    height: 80vh;
     justify-content: space-evenly;
     font-family: $font;
     background-color: $bg-color;
     background-image: $bg-image;
-    height: 800px;
     padding: 40px;
     font-size: 35px;
+    height: 1000px;
 
     .infoNos {
         max-height: 600px;
