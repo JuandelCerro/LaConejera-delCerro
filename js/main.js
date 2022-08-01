@@ -17,3 +17,15 @@ const producto9 = new Producto("Mochila con Brillo", 1200);
 
 const productos = [producto1, producto2, producto3, producto4, producto5, producto6, producto7, producto8, producto9];
 
+let contadorCarrito = 0;
+
+const sumaContadorCarrito = document.getElementById('btnAgregarCarrito');
+let contadorCarritoText = parseInt(document.getElementById('contadorCarritoText').innerHTML) + 1;
+
+sumaContadorCarrito.addEventListener('click', () => {
+    console.log('CLICK');
+    contadorCarrito = contadorCarrito + 1;
+    console.log(contadorCarrito);
+    console.log(contadorCarritoText);
+    contadorCarritoText = contadorCarritoText + 1;
+});

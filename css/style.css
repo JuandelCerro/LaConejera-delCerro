@@ -77,7 +77,10 @@
   margin-right: 15px;
 }
 .header .nav .imgCarrito {
-  width: 50%;
+  width: 30%;
+}
+.header .nav .contadorCarrito {
+  font-size: 20px;
 }
 
 main {
