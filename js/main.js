@@ -59,6 +59,7 @@ btnCarrito2.addEventListener('click', () => {
     console.log(contadorCarrito);
     console.log(contadorCarritoText);
     contadorCarritoText = contadorCarritoText + 1;
+    aPagar = aPagar + producto2.precio;
 
     const p = document.createElement('p');
     const span = document.createElement('span');
@@ -77,6 +78,7 @@ btnCarrito3.addEventListener('click', () => {
     console.log(contadorCarrito);
     console.log(contadorCarritoText);
     contadorCarritoText = contadorCarritoText + 1;
+    aPagar = aPagar + producto3.precio;
 
     const p = document.createElement('p');
     const span = document.createElement('span');
@@ -95,6 +97,7 @@ btnCarrito4.addEventListener('click', () => {
     console.log(contadorCarrito);
     console.log(contadorCarritoText);
     contadorCarritoText = contadorCarritoText + 1;
+    aPagar = aPagar + producto4.precio;
 
     const p = document.createElement('p');
     const span = document.createElement('span');
@@ -113,6 +116,7 @@ btnCarrito5.addEventListener('click', () => {
     console.log(contadorCarrito);
     console.log(contadorCarritoText);
     contadorCarritoText = contadorCarritoText + 1;
+    aPagar = aPagar + producto5.precio;
 
     const p = document.createElement('p');
     const span = document.createElement('span');
@@ -131,6 +135,7 @@ btnCarrito6.addEventListener('click', () => {
     console.log(contadorCarrito);
     console.log(contadorCarritoText);
     contadorCarritoText = contadorCarritoText + 1;
+    aPagar = aPagar + producto6.precio;
 
     const p = document.createElement('p');
     const span = document.createElement('span');
@@ -149,6 +154,7 @@ btnCarrito7.addEventListener('click', () => {
     console.log(contadorCarrito);
     console.log(contadorCarritoText);
     contadorCarritoText = contadorCarritoText + 1;
+    aPagar = aPagar + producto7.precio;
 
     const p = document.createElement('p');
     const span = document.createElement('span');
@@ -167,6 +173,7 @@ btnCarrito8.addEventListener('click', () => {
     console.log(contadorCarrito);
     console.log(contadorCarritoText);
     contadorCarritoText = contadorCarritoText + 1;
+    aPagar = aPagar + producto8.precio; 
 
     const p = document.createElement('p');
     const span = document.createElement('span');
@@ -185,6 +192,7 @@ btnCarrito9.addEventListener('click', () => {
     console.log(contadorCarrito);
     console.log(contadorCarritoText);
     contadorCarritoText = contadorCarritoText + 1;
+    aPagar = aPagar + producto9.precio;
 
     const p = document.createElement('p');
     const span = document.createElement('span');
