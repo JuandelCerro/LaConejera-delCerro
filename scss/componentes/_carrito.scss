@@ -20,9 +20,22 @@
             margin-top: 15px;
             margin-bottom: 10px;
             border-radius: 10px;
-            width: 130%;
+            width: 150%;
+            height: 65%;
             box-shadow: $bx-shadow;
         }
+
+        #btnVaciarCarrito {
+            transition: all 0.03s;
+        
+            &:hover {
+                transform: map-get($header, scale);
+            }
+        
+            &:active{
+                color: rgba(255, 255, 255, 0.733);
+            }
+          }
 
         h2 {
             padding-bottom: 30px;

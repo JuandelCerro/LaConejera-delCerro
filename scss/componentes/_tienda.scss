@@ -100,7 +100,21 @@
     background-color: $bg-color-sec;
     border: $bd-color;
   }
+
+  .btnTienda {
+    transition: all 0.03s;
+
+    &:hover {
+        text-shadow: 1.5px 1.5px 2.5px rgba(0, 0, 0, 0.623);
+        transform: map-get($header, scale);
+    }
+
+    &:active{
+        color: rgba(255, 255, 255, 0.733);
+    }
+  }
 }
+
 
 @media screen and (max-width: 480px) {
   .tienda {
