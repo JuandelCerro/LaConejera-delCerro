@@ -2,33 +2,56 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 60vh;
 
     .carritoContenedor {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 70%;
-        height: 60%;
+        width: 50%;
+        height: 80%;
         background-color: $bg-color-sec;
         box-shadow: $bx-shadow;
         border-radius: 15px;
 
-        #carritoLista {
-            display: flex;
-            justify-content: flex-start;
-            flex-direction: column;
-            width: 90%;
-            height: 80%;
-            background-color: $bg-color;
-            border-width: 1px;
-            border-style: solid;
-            border-color: black;
-            padding: 0;
+        #btnVaciarCarrito {
+            color: black;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            width: 130%;
+            box-shadow: $bx-shadow;
+        }
 
-            p {
+        h2 {
+            padding-bottom: 30px;
+        }
+
+        #totalAPagar {
+            padding-top: 20px;
+            font-size: 25px;
+        }
+
+        .carritoLista {
+            text-align: center;
+            width: 70%;
+            height: 65%;
+            background-color: $bg-color;
+            border: 1px solid black;
+
+            #carritoListaContenedor {
+                table-layout: fixed;
+                width: 200px;
                 text-align: center;
+                background-color: $bg-color;
+                margin-top: 5px;
+                width: 100%;
+            }
+
+            .totalCarrito {
+                display: flex;
+
             }
         }
     }
