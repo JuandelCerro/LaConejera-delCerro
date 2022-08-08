@@ -60,6 +60,12 @@
                 background-color: $bg-color;
                 margin-top: 5px;
                 width: 100%;
+                border-collapse: collapse;
+
+                tr {
+                    border-bottom: 1pt solid black;
+                    padding: 20px;
+                }
             }
 
             .totalCarrito {

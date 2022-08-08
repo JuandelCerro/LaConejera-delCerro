@@ -1,6 +1,8 @@
 .header {
-    margin-top: 35px;
     box-shadow: $bx-shadow;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
 
     .nav {
         background-image: url("/imagenes/banners/banner-header.jpg");

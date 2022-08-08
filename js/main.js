@@ -17,6 +17,12 @@ listaProductos.push(new Producto(6, "Kit Creativo", 1000));
 listaProductos.push(new Producto(7, "Marineras", 600));
 listaProductos.push(new Producto(8, "Mochila de Peluche", 1200));
 listaProductos.push(new Producto(9, "Mochila con Brillo", 1200));
+listaProductos.push(new Producto(10, "Brownie", 1500));
+listaProductos.push(new Producto(11, "Chessecake", 1500));
+listaProductos.push(new Producto(12, "Chocotorta", 1400));
+listaProductos.push(new Producto(13, "Lemon Pie", 1400));
+listaProductos.push(new Producto(14, "Rogel", 1700));
+listaProductos.push(new Producto(15, "Tarta de Manzana", 1700));
 
 console.log(listaProductos);
 
@@ -41,7 +47,7 @@ for (const elemento of eventoBotonAgregar) {
 
         contadorCarrito = contadorCarrito + 1;
         totalCarrito = totalCarrito + producto.precio;
-        
+
         document.getElementById("totalAPagar").innerHTML = totalCarrito;
         document.getElementById("carritoContador").innerHTML = contadorCarrito; //hacer contador de carrito
     })
@@ -50,7 +56,12 @@ for (const elemento of eventoBotonAgregar) {
 const eventoBotonVaciar = document.getElementById("btnVaciarCarrito");
 
 eventoBotonVaciar.addEventListener("click", () => {
-    domCarrito.remove;
+    domCarrito.innerHTML = `
+    <tr>
+    <th>PRODUCTO</th>
+    <th>PRECIO</th>
+    </tr>
+    `;
     totalCarrito = 0;
     contadorCarrito = 0;
     document.getElementById("totalAPagar").innerHTML = totalCarrito;

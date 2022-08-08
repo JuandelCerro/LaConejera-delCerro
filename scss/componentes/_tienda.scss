@@ -10,7 +10,9 @@
   grid-template-areas:
     "item1 item2 item3"
     "item4 item5 item6"
-    "item7 item8 item9";
+    "item7 item8 item9"
+    "item10 item11 item12"
+    "item13 item14 item15";
 
   .item1 {
     grid-area: item1;
@@ -90,6 +92,66 @@
 
     img {
       @extend %imgTienda
+    }
+  }
+
+  .item10 {
+    grid-area: item10;
+    @extend %itemTienda;
+
+    img {
+      @extend %imgTienda;
+      border: 3px solid white;
+    }
+  }
+
+  .item11 {
+    grid-area: item11;
+    @extend %itemTienda;
+
+    img {
+      @extend %imgTienda;
+      border: 3px solid white;
+    }
+  }
+
+  .item12 {
+    grid-area: item12;
+    @extend %itemTienda;
+
+    img {
+      @extend %imgTienda;
+      border: 3px solid white;
+    }
+  }
+
+  .item13 {
+    grid-area: item13;
+    @extend %itemTienda;
+
+    img {
+      @extend %imgTienda;
+      border: 3px solid white;
+    }
+  }
+
+  .item14 {
+    grid-area: item14;
+    @extend %itemTienda;
+
+    img {
+      @extend %imgTienda;
+      border: 3px solid white;
+    }
+  }
+
+  .item15 {
+    grid-area: item15;
+    @extend %itemTienda;
+
+    img {
+      @extend %imgTienda;
+      border: 3px solid white;
     }
   }
 
