@@ -38,7 +38,7 @@
   transition: all 0.3s;
 }
 .header .nav .logoMedio:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .header .nav .nosotrosBtn,
 .header .nav .contactoBtn,
@@ -55,7 +55,7 @@
 .header .nav .menuBtn:hover,
 .header .nav .tiendaBtn:hover {
   text-shadow: 1.5px 1.5px 2.5px rgba(0, 0, 0, 0.623);
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .header .nav .nosotrosBtn:active,
 .header .nav .contactoBtn:active,
@@ -230,7 +230,7 @@ footer p {
 }
 .contacto .container button:hover {
   color: grey;
-  transform: scale(1.05);
+  transform: scale(1.02);
   border-color: grey;
 }
 .contacto .container input,
@@ -434,29 +434,101 @@ footer p {
 .tienda .item1 {
   grid-area: item1;
 }
+.tienda .item1 .card-cantidad {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tienda .item1 .card-cantidad .cantidad {
+  width: 15%;
+  font-size: large;
+}
 .tienda .item2 {
   grid-area: item2;
+}
+.tienda .item2 .card-cantidad {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tienda .item2 .card-cantidad #cantidad {
+  width: 15%;
+  font-size: large;
 }
 .tienda .item3 {
   grid-area: item3;
 }
+.tienda .item3 .card-cantidad {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tienda .item3 .card-cantidad #cantidad {
+  width: 15%;
+  font-size: large;
+}
 .tienda .item4 {
   grid-area: item4;
+}
+.tienda .item4 .card-cantidad {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tienda .item4 .card-cantidad #cantidad {
+  width: 15%;
+  font-size: large;
 }
 .tienda .item5 {
   grid-area: item5;
 }
+.tienda .item5 .card-cantidad {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tienda .item5 .card-cantidad #cantidad {
+  width: 15%;
+  font-size: large;
+}
 .tienda .item6 {
   grid-area: item6;
+}
+.tienda .item6 .card-cantidad {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tienda .item6 .card-cantidad #cantidad {
+  width: 15%;
+  font-size: large;
 }
 .tienda .item7 {
   grid-area: item7;
 }
+.tienda .item7 .card-cantidad {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tienda .item7 .card-cantidad #cantidad {
+  width: 15%;
+  font-size: large;
+}
 .tienda .item8 {
   grid-area: item8;
 }
+.tienda .item8 .card-cantidad {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tienda .item8 .card-cantidad #cantidad {
+  width: 15%;
+  font-size: large;
+}
 .tienda .item9 {
   grid-area: item9;
+}
+.tienda .item9 .card-cantidad {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tienda .item9 .card-cantidad #cantidad {
+  width: 15%;
+  font-size: large;
 }
 .tienda .item10 {
   grid-area: item10;
@@ -464,11 +536,27 @@ footer p {
 .tienda .item10 img {
   border: 3px solid white;
 }
+.tienda .item10 .card-cantidad {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tienda .item10 .card-cantidad #cantidad {
+  width: 15%;
+  font-size: large;
+}
 .tienda .item11 {
   grid-area: item11;
 }
 .tienda .item11 img {
   border: 3px solid white;
+}
+.tienda .item11 .card-cantidad {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tienda .item11 .card-cantidad #cantidad {
+  width: 15%;
+  font-size: large;
 }
 .tienda .item12 {
   grid-area: item12;
@@ -476,11 +564,27 @@ footer p {
 .tienda .item12 img {
   border: 3px solid white;
 }
+.tienda .item12 .card-cantidad {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tienda .item12 .card-cantidad #cantidad {
+  width: 15%;
+  font-size: large;
+}
 .tienda .item13 {
   grid-area: item13;
 }
 .tienda .item13 img {
   border: 3px solid white;
+}
+.tienda .item13 .card-cantidad {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tienda .item13 .card-cantidad #cantidad {
+  width: 15%;
+  font-size: large;
 }
 .tienda .item14 {
   grid-area: item14;
@@ -488,11 +592,27 @@ footer p {
 .tienda .item14 img {
   border: 3px solid white;
 }
+.tienda .item14 .card-cantidad {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tienda .item14 .card-cantidad #cantidad {
+  width: 15%;
+  font-size: large;
+}
 .tienda .item15 {
   grid-area: item15;
 }
 .tienda .item15 img {
   border: 3px solid white;
+}
+.tienda .item15 .card-cantidad {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tienda .item15 .card-cantidad #cantidad {
+  width: 15%;
+  font-size: large;
 }
 .tienda .btnTienda {
   color: black;
@@ -506,7 +626,7 @@ footer p {
 }
 .tienda .btnTienda:hover {
   text-shadow: 1.5px 1.5px 2.5px rgba(0, 0, 0, 0.623);
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .tienda .btnTienda:active {
   color: rgba(255, 255, 255, 0.733);
@@ -526,13 +646,13 @@ footer p {
     align-items: center;
   }
 }
-.carrito {
+#carrito {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 80vh;
 }
-.carrito .carritoContenedor {
+#carrito .carritoContenedor {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -543,39 +663,40 @@ footer p {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
   border-radius: 15px;
 }
-.carrito .carritoContenedor #btnVaciarCarrito {
-  color: black;
+#carrito .carritoContenedor .totalCarrito {
+  font-size: x-large;
+}
+#carrito .carritoContenedor #btnVaciarCarrito,
+#carrito .carritoContenedor #btnPagar {
   margin-top: 15px;
   margin-bottom: 10px;
   border-radius: 10px;
   width: 150%;
-  height: 65%;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
 }
-.carrito .carritoContenedor #btnVaciarCarrito {
+#carrito .carritoContenedor #btnVaciarCarrito,
+#carrito .carritoContenedor #btnPagar {
   transition: all 0.03s;
 }
-.carrito .carritoContenedor #btnVaciarCarrito:hover {
-  transform: scale(1.05);
+#carrito .carritoContenedor #btnVaciarCarrito:hover,
+#carrito .carritoContenedor #btnPagar:hover {
+  transform: scale(1.02);
 }
-.carrito .carritoContenedor #btnVaciarCarrito:active {
+#carrito .carritoContenedor #btnVaciarCarrito:active,
+#carrito .carritoContenedor #btnPagar:active {
   color: rgba(255, 255, 255, 0.733);
 }
-.carrito .carritoContenedor h2 {
+#carrito h2 {
   padding-bottom: 30px;
 }
-.carrito .carritoContenedor #totalAPagar {
-  padding-top: 20px;
-  font-size: 25px;
-}
-.carrito .carritoContenedor .carritoLista {
+#carrito .carritoLista {
   text-align: center;
   width: 70%;
   height: 65%;
   background-color: rgba(251, 236, 189, 0.8784313725);
   border: 1px solid black;
 }
-.carrito .carritoContenedor .carritoLista #carritoListaContenedor {
+#carrito .carritoLista #carritoListaContenedor {
   table-layout: fixed;
   width: 200px;
   text-align: center;
@@ -584,12 +705,9 @@ footer p {
   width: 100%;
   border-collapse: collapse;
 }
-.carrito .carritoContenedor .carritoLista #carritoListaContenedor tr {
-  border-bottom: 1pt solid black;
+#carrito .carritoLista #carritoListaContenedor tr {
+  border-bottom: 1px solid black;
   padding: 20px;
-}
-.carrito .carritoContenedor .carritoLista .totalCarrito {
-  display: flex;
 }
 
 * {

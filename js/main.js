@@ -26,44 +26,45 @@ listaProductos.push(new Producto(15, "Tarta de Manzana", 1700));
 
 console.log(listaProductos);
 
+class ProductoCarrito {
+    constructor(id, nombre, precio) {
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+}
+let productosCarrito = []
+
 const domCarrito = document.getElementById("carritoListaContenedor");
 const eventoBotonAgregar = document.getElementsByClassName("miEvento");
 let totalCarrito = 0;
 let contadorCarrito = 0;
 
-for (const elemento of eventoBotonAgregar) {
-    elemento.addEventListener("click", (event) => {
+for (const elemento of eventoBotonAgregar) { 
+    elemento.addEventListener("click", (event) => { // Evento agregar al carrito
         event.preventDefault();
 
         console.log(event.target.id);
         let producto = listaProductos.find(item => item.id === parseInt(event.target.id));
 
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-            <td>${producto.nombre}</td>
-            <td>${producto.precio}</td>
-            `
-        domCarrito.append(tr);
+        productosCarrito.push(new ProductoCarrito(producto.id, producto.nombre, producto.precio)); // Agregando productos al array del carrito
+        console.log(productosCarrito);
+
+        // const tr = document.createElement('tr');
+        // tr.innerHTML = `
+        //     <td>${producto.nombre}</td>
+        //     <td>${producto.precio}</td>
+        //     `
+        // domCarrito.append(tr);
 
         contadorCarrito = contadorCarrito + 1;
         totalCarrito = totalCarrito + producto.precio;
 
-        document.getElementById("totalAPagar").innerHTML = totalCarrito;
+        // document.getElementById("totalAPagar").innerHTML = totalCarrito;
         document.getElementById("carritoContador").innerHTML = contadorCarrito; //hacer contador de carrito
+
+        localStorage.setItem('pagar', totalCarrito);
+        localStorage.setItem('producto', JSON.stringify(productosCarrito));
+        localStorage.setItem('contadorCarrito', contadorCarrito);
     })
 }
-
-const eventoBotonVaciar = document.getElementById("btnVaciarCarrito");
-
-eventoBotonVaciar.addEventListener("click", () => {
-    domCarrito.innerHTML = `
-    <tr>
-    <th>PRODUCTO</th>
-    <th>PRECIO</th>
-    </tr>
-    `;
-    totalCarrito = 0;
-    contadorCarrito = 0;
-    document.getElementById("totalAPagar").innerHTML = totalCarrito;
-    document.getElementById("carritoContador").innerHTML = contadorCarrito;
-})

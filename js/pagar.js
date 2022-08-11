@@ -1,0 +1,42 @@
+document.getElementById("carritoContador").innerHTML = localStorage.getItem('contadorCarrito');
+
+const domCarrito = document.getElementById('carritoListaContenedor');
+const domPagar = document.getElementById('totalAPagar');
+let totalPagar = localStorage.getItem('pagar');
+
+console.log(totalPagar);
+
+const span = document.createElement('span');
+span.innerHTML = `
+    <span>${totalPagar}</span>
+    `
+domPagar.append(span);
+
+
+const productosCarritoParse = JSON.parse(localStorage.getItem('producto'));
+console.log(productosCarritoParse);
+const tr = document.createElement('tr');
+tr.innerHTML = `
+    <tr>${productosCarritoParse.nombre}</tr>
+    `
+domCarrito.append(tr);
+
+
+
+// Evento vaciar carrito
+const eventoBotonVaciar = document.getElementById("btnVaciarCarrito");
+eventoBotonVaciar.addEventListener("click", () => { 
+
+    localStorage.clear();
+
+    domCarrito.innerHTML = `
+    <tr>
+    <th>PRODUCTO</th>
+    <th>PRECIO</th>
+    </tr>
+    `;
+    totalCarrito = 0;
+    contadorCarrito = 0;
+    document.getElementById("totalAPagar").innerHTML = totalCarrito;
+    document.getElementById("carritoContador").innerHTML = contadorCarrito;
+})

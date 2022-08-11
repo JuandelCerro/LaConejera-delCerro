@@ -57,44 +57,43 @@
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <a href="tienda.html#carrito"><img
-                        src="./imagenes/carritoIcono.png" alt="Carrito" class="imgCarrito"></a>
-                    <span class="contadorCarrito">0</span>
-                </div>
+                <div class="carritoItem">
+                    <a href="./pagar.html"><img src="./imagenes/carritoIcono.png" alt="Carrito" class="imgCarrito"></a>
+                    <span id="carritoContador">0</span>
+                  </div>
             </div>
         </nav>
     </header>
     <!-- Fin header -->
 
-    <div class="contacto">
-        <div class="container">
-            <h1 class="brand"><span>CONTACTANOS!</span></h1>
-            <div class="contact">
-                <form id="contactForm">
-                    <p>
-                        <input type="text" placeholder="Nombre y Apellido" name="name" id="name" required>
-                    </p>
-
-                    <p>
-                        <input type="email" placeholder="Direccion de email" name="email" id="email" required>
-                    </p>
-
-                    <p>
-                        <input type="text" placeholder="Telefono" name="phone" id="phone">
-                    </p>
-
-                    <p class="full">
-                        <textarea name="message" placeholder="Escriba su mensaje" rows="5" id="message"></textarea>
-                    </p>
-
-                    <p class="enviarBtn">
-                        <button type="submit">Enviar</button>
-                    </p>
-                </form>
-            </div>
+    <main>
+    <section id="carrito">
+        <div class="carritoContenedor">
+  
+          <h2>CARRITO DE COMPRAS</h2>
+  
+          <div class="carritoLista">
+            <table id="carritoListaContenedor">
+              <tr>
+                <th>PRODUCTO</th>
+                <th>PRECIO</th>
+              </tr>
+            </table>
+          </div>
+  
+          <div class="totalCarrito">
+            <span><strong>TOTAL A PAGAR: $</strong></span>
+            <span id="totalAPagar"></span>
+          </div>
+  
+          <div class="btncarrito">
+            <div><button id="btnVaciarCarrito">Vaciar Carrito</button></div>
+            <div><a href="./pagar.html"><button id="btnPagar" href="./pagar.html">Pagar</button></div>
+          </div>
         </div>
-    </div>
+      </section>
+
+    </main>
 
     <!-- Inicio footer -->
     <footer>
@@ -107,12 +106,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-    <script>
-        window.addEventListener("load", function (event) {
-            document.getElementsByClassName("disclaimer")[0].remove();
-            console.log("Eliminado!");
-        });
-    </script>
+    <script src="./js/pagar.js"></script>
 </body>
 
 </html>

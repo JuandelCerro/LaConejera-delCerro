@@ -21,6 +21,16 @@
     img {
       @extend %imgTienda
     }
+
+    .card-cantidad {
+      display: flex;
+      justify-content: space-evenly;
+
+      .cantidad {
+        width: 15%;
+        font-size: large;
+      }
+    }
   }
 
   .item2 {
@@ -29,6 +39,16 @@
 
     img {
       @extend %imgTienda
+    }
+
+    .card-cantidad {
+      display: flex;
+      justify-content: space-evenly;
+
+      #cantidad {
+        width: 15%;
+        font-size: large;
+      }
     }
   }
 
@@ -39,6 +59,16 @@
     img {
       @extend %imgTienda
     }
+
+    .card-cantidad {
+      display: flex;
+      justify-content: space-evenly;
+
+      #cantidad {
+        width: 15%;
+        font-size: large;
+      }
+    }
   }
 
   .item4 {
@@ -47,6 +77,16 @@
 
     img {
       @extend %imgTienda
+    }
+
+    .card-cantidad {
+      display: flex;
+      justify-content: space-evenly;
+
+      #cantidad {
+        width: 15%;
+        font-size: large;
+      }
     }
   }
 
@@ -57,6 +97,16 @@
     img {
       @extend %imgTienda
     }
+
+    .card-cantidad {
+      display: flex;
+      justify-content: space-evenly;
+
+      #cantidad {
+        width: 15%;
+        font-size: large;
+      }
+    }
   }
 
   .item6 {
@@ -65,6 +115,16 @@
 
     img {
       @extend %imgTienda
+    }
+
+    .card-cantidad {
+      display: flex;
+      justify-content: space-evenly;
+
+      #cantidad {
+        width: 15%;
+        font-size: large;
+      }
     }
   }
 
@@ -75,6 +135,16 @@
     img {
       @extend %imgTienda
     }
+
+    .card-cantidad {
+      display: flex;
+      justify-content: space-evenly;
+
+      #cantidad {
+        width: 15%;
+        font-size: large;
+      }
+    }
   }
 
   .item8 {
@@ -84,6 +154,16 @@
     img {
       @extend %imgTienda
     }
+
+    .card-cantidad {
+      display: flex;
+      justify-content: space-evenly;
+
+      #cantidad {
+        width: 15%;
+        font-size: large;
+      }
+    }
   }
 
   .item9 {
@@ -92,6 +172,16 @@
 
     img {
       @extend %imgTienda
+    }
+
+    .card-cantidad {
+      display: flex;
+      justify-content: space-evenly;
+
+      #cantidad {
+        width: 15%;
+        font-size: large;
+      }
     }
   }
 
@@ -103,6 +193,16 @@
       @extend %imgTienda;
       border: 3px solid white;
     }
+
+    .card-cantidad {
+      display: flex;
+      justify-content: space-evenly;
+
+      #cantidad {
+        width: 15%;
+        font-size: large;
+      }
+    }
   }
 
   .item11 {
@@ -112,6 +212,16 @@
     img {
       @extend %imgTienda;
       border: 3px solid white;
+    }
+
+    .card-cantidad {
+      display: flex;
+      justify-content: space-evenly;
+
+      #cantidad {
+        width: 15%;
+        font-size: large;
+      }
     }
   }
 
@@ -123,6 +233,16 @@
       @extend %imgTienda;
       border: 3px solid white;
     }
+
+    .card-cantidad {
+      display: flex;
+      justify-content: space-evenly;
+
+      #cantidad {
+        width: 15%;
+        font-size: large;
+      }
+    }
   }
 
   .item13 {
@@ -132,6 +252,16 @@
     img {
       @extend %imgTienda;
       border: 3px solid white;
+    }
+
+    .card-cantidad {
+      display: flex;
+      justify-content: space-evenly;
+
+      #cantidad {
+        width: 15%;
+        font-size: large;
+      }
     }
   }
 
@@ -143,6 +273,16 @@
       @extend %imgTienda;
       border: 3px solid white;
     }
+
+    .card-cantidad {
+      display: flex;
+      justify-content: space-evenly;
+
+      #cantidad {
+        width: 15%;
+        font-size: large;
+      }
+    }
   }
 
   .item15 {
@@ -152,6 +292,16 @@
     img {
       @extend %imgTienda;
       border: 3px solid white;
+    }
+
+    .card-cantidad {
+      display: flex;
+      justify-content: space-evenly;
+
+      #cantidad {
+        width: 15%;
+        font-size: large;
+      }
     }
   }
 
@@ -167,12 +317,12 @@
     transition: all 0.03s;
 
     &:hover {
-        text-shadow: 1.5px 1.5px 2.5px rgba(0, 0, 0, 0.623);
-        transform: map-get($header, scale);
+      text-shadow: 1.5px 1.5px 2.5px rgba(0, 0, 0, 0.623);
+      transform: map-get($header, scale);
     }
 
-    &:active{
-        color: rgba(255, 255, 255, 0.733);
+    &:active {
+      color: rgba(255, 255, 255, 0.733);
     }
   }
 }
