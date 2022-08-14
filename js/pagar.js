@@ -15,11 +15,15 @@ domPagar.append(span);
 
 const productosCarritoParse = JSON.parse(localStorage.getItem('producto'));
 console.log(productosCarritoParse);
-const tr = document.createElement('tr');
-tr.innerHTML = `
-    <tr>${productosCarritoParse.nombre}</tr>
-    `
-domCarrito.append(tr);
+
+productosCarritoParse.forEach(producto => {
+             const tr = document.createElement('tr');
+         tr.innerHTML = `
+             <td>${producto.nombre}</td>
+             <td>${producto.precio}</td>
+             `
+         domCarrito.append(tr);
+});
 
 
 
