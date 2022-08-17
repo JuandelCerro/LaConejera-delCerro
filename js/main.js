@@ -35,32 +35,25 @@ class ProductoCarrito {
 }
 let productosCarrito = []
 
-const domCarrito = document.getElementById("carritoListaContenedor");
-const eventoBotonAgregar = document.getElementsByClassName("miEvento");
 let totalCarrito = 0;
 let contadorCarrito = 0;
+const domCarrito = document.getElementById("carritoListaContenedor");
+const eventoBotonAgregar = document.getElementsByClassName("miEvento");
 
-for (const elemento of eventoBotonAgregar) { 
+for (const elemento of eventoBotonAgregar) {
     elemento.addEventListener("click", (event) => { // Evento agregar al carrito
         event.preventDefault();
 
         console.log(event.target.id);
         let producto = listaProductos.find(item => item.id === parseInt(event.target.id));
+        let {id, nombre, precio} = producto; // Desestructuracion producto
 
-        productosCarrito.push(new ProductoCarrito(producto.id, producto.nombre, producto.precio)); // Agregando productos al array del carrito
+        productosCarrito.push(new ProductoCarrito(id, nombre, precio)); // Agregando productos al array del carrito
         console.log(productosCarrito);
 
-        // const tr = document.createElement('tr');
-        // tr.innerHTML = `
-        //     <td>${producto.nombre}</td>
-        //     <td>${producto.precio}</td>
-        //     `
-        // domCarrito.append(tr);
+        contadorCarrito++;
+        totalCarrito += precio;
 
-        contadorCarrito = contadorCarrito + 1;
-        totalCarrito = totalCarrito + producto.precio;
-
-        // document.getElementById("totalAPagar").innerHTML = totalCarrito;
         document.getElementById("carritoContador").innerHTML = contadorCarrito; //hacer contador de carrito
 
         localStorage.setItem('pagar', totalCarrito);

@@ -1,10 +1,8 @@
-document.getElementById("carritoContador").innerHTML = localStorage.getItem('contadorCarrito');
-
 const domCarrito = document.getElementById('carritoListaContenedor');
 const domPagar = document.getElementById('totalAPagar');
 let totalPagar = localStorage.getItem('pagar');
 
-console.log(totalPagar);
+document.getElementById("carritoContador").innerHTML = localStorage.getItem('contadorCarrito');
 
 const span = document.createElement('span');
 span.innerHTML = `
@@ -12,24 +10,22 @@ span.innerHTML = `
     `
 domPagar.append(span);
 
-
 const productosCarritoParse = JSON.parse(localStorage.getItem('producto'));
 console.log(productosCarritoParse);
 
-
 productosCarritoParse.forEach(producto => {
-             const tr = document.createElement('tr');
-         tr.innerHTML = `
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
              <td>${producto.nombre}</td>
              <td>${producto.precio}</td>
              `
-         domCarrito.append(tr);
+    domCarrito.append(tr);
 });
 
 
 // Evento vaciar carrito
 const eventoBotonVaciar = document.getElementById("btnVaciarCarrito");
-eventoBotonVaciar.addEventListener("click", () => { 
+eventoBotonVaciar.addEventListener("click", () => {
 
     localStorage.clear();
 
