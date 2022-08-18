@@ -59,5 +59,12 @@ for (const elemento of eventoBotonAgregar) {
         localStorage.setItem('pagar', totalCarrito);
         localStorage.setItem('producto', JSON.stringify(productosCarrito));
         localStorage.setItem('contadorCarrito', contadorCarrito);
+        Swal.fire({
+            title: 'Agregado al carrito',
+            icon: 'success',
+            title: 'Agregaste ' + nombre + ' al carrito!',
+            showConfirmButton: false,
+            timer: 1500,
+          })
     })
 }

@@ -421,6 +421,7 @@ footer p {
   }
 }
 .tienda {
+  width: 100%;
   color: black !important;
   font-size: 25px;
   font-family: "Lato", sans-serif;
