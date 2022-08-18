@@ -69,7 +69,6 @@ eventoBotonVaciar.addEventListener("click", () => {
 })
 
 // Evento boton pagar
-
 const eventoBotonPagar = document.getElementById("btnPagar");
 eventoBotonPagar.addEventListener("click", () => {
 
