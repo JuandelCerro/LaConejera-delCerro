@@ -4,6 +4,21 @@ footer {
     border-top: $bd-color;
     background-color: $bg-color-sec;
 
+    .infoRedes {
+        padding-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        a {
+            transition: all 0.2s;
+
+            &:hover {
+                transform: scale(1.07);
+            }
+        }
+    }
+
     p {
         margin: 0 !important;
     }
