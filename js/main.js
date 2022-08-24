@@ -1,3 +1,8 @@
+    fetch('./json/data.json')
+        .then((res) => res.json())
+        .then((data) => console.log(data));
+
+
 class Producto {
     constructor(id, nombre, precio) {
         this.id = id;
@@ -7,6 +12,7 @@ class Producto {
 }
 
 const listaProductos = [];
+
 
 listaProductos.push(new Producto(1, "Almohadon y Antifaz", 500));
 listaProductos.push(new Producto(2, "Almohadones", 500));
@@ -24,7 +30,7 @@ listaProductos.push(new Producto(13, "Lemon Pie", 1400));
 listaProductos.push(new Producto(14, "Rogel", 1700));
 listaProductos.push(new Producto(15, "Tarta de Manzana", 1700));
 
-console.log(listaProductos);
+// console.log(listaProductos);
 
 class ProductoCarrito {
     constructor(id, nombre, precio) {
