@@ -30,41 +30,39 @@
   <header class="header">
     <div class="separacion"></div>
     <nav class="navbar navbar-expand-lg navbar-light nav">
-        <div class="container-fluid menuNav">
-            <a class="navbar-brand" href="./index.html"><img class="logoMedio" id="logoConeja"
-                    src="./imagenes/banners/LaConejera_BlondaPNG (2).png" alt="Logo de la Conejera"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active nosotrosBtn" aria-current="page"
-                            href="./nosotros.html">NOSOTROS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active contactoBtn" href="./contacto.html">CONTACTO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active ubicacionBtn" href="index.html#informacion">UBICACION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active menuBtn" href="./menu.html">MENU</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active tiendaBtn" href="./tienda.html">TIENDA</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <a href="tienda.html#carrito"><img
-                    src="./imagenes/carritoIcono.png" alt="Carrito" class="imgCarrito"></a>
-                <span class="contadorCarrito">0</span>
-            </div>
+      <div class="container-fluid menuNav">
+        <a class="navbar-brand" href="./index.html"><img class="logoMedio" id="logoConeja"
+            src="./imagenes/banners/LaConejera_BlondaPNG (2).png" alt="Logo de la Conejera"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active nosotrosBtn" aria-current="page" href="./nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active contactoBtn" href="./contacto.html">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active ubicacionBtn" href="index.html#informacion">UBICACION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active menuBtn" href="./menu.html">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active tiendaBtn" href="./tienda.html">TIENDA</a>
+            </li>
+          </ul>
         </div>
+        <div class="carritoItem">
+          <a href="./pagar.html"><img src="./imagenes/carritoIcono.png" alt="Carrito" class="imgCarrito"></a>
+          <span id="carritoContador"> 0 </span>
+        </div>
+      </div>
     </nav>
-</header>
+  </header>
   <!-- Fin header -->
 
   <!-- Inicio seccion menu -->
@@ -86,12 +84,12 @@
     <div>
       <div class="infoRedes">
         <a href="https://www.instagram.com/laconejera.bardechicos/" target="_blank"><img
-                src="./imagenes/instagramIcono.png" alt="Instagram"></a>
+            src="./imagenes/instagramIcono.png" alt="Instagram"></a>
         <a href="https://www.facebook.com/laconejera.bardechicos/" target="_blank"><img
-                src="./imagenes/facebookIcono.png" alt="Facebook"></a>
-        <a href="https://api.whatsapp.com/send?phone=541150956657" target="_blank"><img
-                src="./imagenes/wspIcono.png" alt="Whatsapp"></a>
-    </div>
+            src="./imagenes/facebookIcono.png" alt="Facebook"></a>
+        <a href="https://api.whatsapp.com/send?phone=541150956657" target="_blank"><img src="./imagenes/wspIcono.png"
+            alt="Whatsapp"></a>
+      </div>
       <p>Copyright © 2022 La Conejera - Todos los derechos reservados.</p>
     </div>
   </footer>
@@ -100,12 +98,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
-  <script>
-    window.addEventListener("load", function (event) {
-      document.getElementsByClassName("disclaimer")[0].remove();
-      console.log("Eliminado!");
-    });
-  </script>
+  <script src="./js/carrito.js"></script>
 </body>
 
 </html>
