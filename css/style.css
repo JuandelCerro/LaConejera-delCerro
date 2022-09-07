@@ -4,13 +4,13 @@
   justify-items: center;
 }
 
-.tienda .item15, .tienda .item14, .tienda .item13, .tienda .item12, .tienda .item11, .tienda .item10, .tienda .item9, .tienda .item8, .tienda .item7, .tienda .item6, .tienda .item5, .tienda .item4, .tienda .item3, .tienda .item2, .tienda .item1 {
+#tienda .item15, #tienda .item14, #tienda .item13, #tienda .item12, #tienda .item11, #tienda .item10, #tienda .item9, #tienda .item8, #tienda .item7, #tienda .item6, #tienda .item5, #tienda .item4, #tienda .item3, #tienda .item2, #tienda .item1 {
   text-align: center;
   border: none;
   background: none;
 }
 
-.tienda .item15 img, .tienda .item14 img, .tienda .item13 img, .tienda .item12 img, .tienda .item11 img, .tienda .item10 img, .tienda .item9 img, .tienda .item8 img, .tienda .item7 img, .tienda .item6 img, .tienda .item5 img, .tienda .item4 img, .tienda .item3 img, .tienda .item2 img, .tienda .item1 img {
+#tienda .item15 img, #tienda .item14 img, #tienda .item13 img, #tienda .item12 img, #tienda .item11 img, #tienda .item10 img, #tienda .item9 img, #tienda .item8 img, #tienda .item7 img, #tienda .item6 img, #tienda .item5 img, #tienda .item4 img, #tienda .item3 img, #tienda .item2 img, #tienda .item1 img {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
   border-radius: 10px;
 }
@@ -431,7 +431,7 @@ footer p {
     text-align: justify;
   }
 }
-.tienda {
+#tienda {
   width: 100%;
   color: black !important;
   font-size: 25px;
@@ -443,204 +443,204 @@ footer p {
   grid-row-gap: 15px;
   grid-template-areas: "item1 item2 item3" "item4 item5 item6" "item7 item8 item9" "item10 item11 item12" "item13 item14 item15";
 }
-.tienda .item1 {
+#tienda .item1 {
   grid-area: item1;
 }
-.tienda .item1 .card-cantidad {
+#tienda .item1 .card-cantidad {
   display: flex;
   justify-content: space-evenly;
 }
-.tienda .item1 .card-cantidad .cantidad {
+#tienda .item1 .card-cantidad .cantidad {
   width: 15%;
   font-size: large;
 }
-.tienda .item2 {
+#tienda .item2 {
   grid-area: item2;
 }
-.tienda .item2 .card-cantidad {
+#tienda .item2 .card-cantidad {
   display: flex;
   justify-content: space-evenly;
 }
-.tienda .item2 .card-cantidad #cantidad {
+#tienda .item2 .card-cantidad #cantidad {
   width: 15%;
   font-size: large;
 }
-.tienda .item3 {
+#tienda .item3 {
   grid-area: item3;
 }
-.tienda .item3 .card-cantidad {
+#tienda .item3 .card-cantidad {
   display: flex;
   justify-content: space-evenly;
 }
-.tienda .item3 .card-cantidad #cantidad {
+#tienda .item3 .card-cantidad #cantidad {
   width: 15%;
   font-size: large;
 }
-.tienda .item4 {
+#tienda .item4 {
   grid-area: item4;
 }
-.tienda .item4 .card-cantidad {
+#tienda .item4 .card-cantidad {
   display: flex;
   justify-content: space-evenly;
 }
-.tienda .item4 .card-cantidad #cantidad {
+#tienda .item4 .card-cantidad #cantidad {
   width: 15%;
   font-size: large;
 }
-.tienda .item5 {
+#tienda .item5 {
   grid-area: item5;
 }
-.tienda .item5 .card-cantidad {
+#tienda .item5 .card-cantidad {
   display: flex;
   justify-content: space-evenly;
 }
-.tienda .item5 .card-cantidad #cantidad {
+#tienda .item5 .card-cantidad #cantidad {
   width: 15%;
   font-size: large;
 }
-.tienda .item6 {
+#tienda .item6 {
   grid-area: item6;
 }
-.tienda .item6 .card-cantidad {
+#tienda .item6 .card-cantidad {
   display: flex;
   justify-content: space-evenly;
 }
-.tienda .item6 .card-cantidad #cantidad {
+#tienda .item6 .card-cantidad #cantidad {
   width: 15%;
   font-size: large;
 }
-.tienda .item7 {
+#tienda .item7 {
   grid-area: item7;
 }
-.tienda .item7 .card-cantidad {
+#tienda .item7 .card-cantidad {
   display: flex;
   justify-content: space-evenly;
 }
-.tienda .item7 .card-cantidad #cantidad {
+#tienda .item7 .card-cantidad #cantidad {
   width: 15%;
   font-size: large;
 }
-.tienda .item8 {
+#tienda .item8 {
   grid-area: item8;
 }
-.tienda .item8 .card-cantidad {
+#tienda .item8 .card-cantidad {
   display: flex;
   justify-content: space-evenly;
 }
-.tienda .item8 .card-cantidad #cantidad {
+#tienda .item8 .card-cantidad #cantidad {
   width: 15%;
   font-size: large;
 }
-.tienda .item9 {
+#tienda .item9 {
   grid-area: item9;
 }
-.tienda .item9 .card-cantidad {
+#tienda .item9 .card-cantidad {
   display: flex;
   justify-content: space-evenly;
 }
-.tienda .item9 .card-cantidad #cantidad {
+#tienda .item9 .card-cantidad #cantidad {
   width: 15%;
   font-size: large;
 }
-.tienda .item10 {
+#tienda .item10 {
   grid-area: item10;
 }
-.tienda .item10 img {
+#tienda .item10 img {
   border: 3px solid white;
 }
-.tienda .item10 .card-cantidad {
+#tienda .item10 .card-cantidad {
   display: flex;
   justify-content: space-evenly;
 }
-.tienda .item10 .card-cantidad #cantidad {
+#tienda .item10 .card-cantidad #cantidad {
   width: 15%;
   font-size: large;
 }
-.tienda .item11 {
+#tienda .item11 {
   grid-area: item11;
 }
-.tienda .item11 img {
+#tienda .item11 img {
   border: 3px solid white;
 }
-.tienda .item11 .card-cantidad {
+#tienda .item11 .card-cantidad {
   display: flex;
   justify-content: space-evenly;
 }
-.tienda .item11 .card-cantidad #cantidad {
+#tienda .item11 .card-cantidad #cantidad {
   width: 15%;
   font-size: large;
 }
-.tienda .item12 {
+#tienda .item12 {
   grid-area: item12;
 }
-.tienda .item12 img {
+#tienda .item12 img {
   border: 3px solid white;
 }
-.tienda .item12 .card-cantidad {
+#tienda .item12 .card-cantidad {
   display: flex;
   justify-content: space-evenly;
 }
-.tienda .item12 .card-cantidad #cantidad {
+#tienda .item12 .card-cantidad #cantidad {
   width: 15%;
   font-size: large;
 }
-.tienda .item13 {
+#tienda .item13 {
   grid-area: item13;
 }
-.tienda .item13 img {
+#tienda .item13 img {
   border: 3px solid white;
 }
-.tienda .item13 .card-cantidad {
+#tienda .item13 .card-cantidad {
   display: flex;
   justify-content: space-evenly;
 }
-.tienda .item13 .card-cantidad #cantidad {
+#tienda .item13 .card-cantidad #cantidad {
   width: 15%;
   font-size: large;
 }
-.tienda .item14 {
+#tienda .item14 {
   grid-area: item14;
 }
-.tienda .item14 img {
+#tienda .item14 img {
   border: 3px solid white;
 }
-.tienda .item14 .card-cantidad {
+#tienda .item14 .card-cantidad {
   display: flex;
   justify-content: space-evenly;
 }
-.tienda .item14 .card-cantidad #cantidad {
+#tienda .item14 .card-cantidad #cantidad {
   width: 15%;
   font-size: large;
 }
-.tienda .item15 {
+#tienda .item15 {
   grid-area: item15;
 }
-.tienda .item15 img {
+#tienda .item15 img {
   border: 3px solid white;
 }
-.tienda .item15 .card-cantidad {
+#tienda .item15 .card-cantidad {
   display: flex;
   justify-content: space-evenly;
 }
-.tienda .item15 .card-cantidad #cantidad {
+#tienda .item15 .card-cantidad #cantidad {
   width: 15%;
   font-size: large;
 }
-.tienda .btnTienda {
+#tienda .btnTienda {
   color: black;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   background-color: #fbdb7c;
   border: rgba(0, 0, 0, 0.336) 1.5px outset;
 }
-.tienda .btnTienda {
+#tienda .btnTienda {
   transition: all 0.03s;
 }
-.tienda .btnTienda:hover {
+#tienda .btnTienda:hover {
   text-shadow: 1.5px 1.5px 2.5px rgba(0, 0, 0, 0.623);
   transform: scale(1.02);
 }
-.tienda .btnTienda:active {
+#tienda .btnTienda:active {
   color: rgba(255, 255, 255, 0.733);
 }
 

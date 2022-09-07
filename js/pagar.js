@@ -98,3 +98,4 @@ eventoBotonPagar.addEventListener("click", () => {
         }
     })
 })
+
