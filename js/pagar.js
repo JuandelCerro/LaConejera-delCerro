@@ -1,12 +1,12 @@
 const domCarrito = document.getElementById('carritoListaContenedor');
 const domPagar = document.getElementById('totalAPagar');
-let totalPagar = localStorage.getItem('pagar');
+let totalPagar = parseInt(localStorage.getItem('pagar'));
 
 document.getElementById("carritoContador").innerHTML = localStorage.getItem('contadorCarrito');
 
 const span = document.createElement('span');
 span.innerHTML = `
-    <span>${totalPagar}</span>
+    <span>${totalPagar*1.21}</span>
     `
 domPagar.append(span);
 
@@ -28,7 +28,6 @@ productosCarritoParse.forEach(producto => {
              `
     domCarrito.append(tr);
 });
-
 
 // Evento vaciar carrito
 const eventoBotonVaciar = document.getElementById("btnVaciarCarrito");
@@ -57,6 +56,7 @@ eventoBotonVaciar.addEventListener("click", () => {
             domCarrito.innerHTML = `
           <tr>
           <th>PRODUCTO</th>
+          <th>CANTIDAD</th>
           <th>PRECIO</th>
           </tr>
           `;
@@ -98,4 +98,3 @@ eventoBotonPagar.addEventListener("click", () => {
         }
     })
 })
-
