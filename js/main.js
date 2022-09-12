@@ -7,8 +7,6 @@ class ProductoCarrito {
     }
 }
 
-
-
 fetch('./json/data.json')
     .then((res) => res.json())
     .then((data) => localStorage.setItem('dataProductos', JSON.stringify(data)))
@@ -34,10 +32,10 @@ fetch('./json/data.json')
 
         const eventoBotonAgregar = document.getElementsByClassName("miEvento");
 
-        // let cantidad = 1;
+        let cantidad = 0;
         let totalCarrito = parseInt(localStorage.getItem('pagar') || 0);
         let contadorCarrito = parseInt(localStorage.getItem('contadorCarrito') || 0);
-        
+
         for (const elemento of eventoBotonAgregar) {
             elemento.addEventListener("click", (event) => { // Evento agregar al carrito
                 let productosCarrito = JSON.parse(localStorage.getItem('producto')) || [];
@@ -50,35 +48,14 @@ fetch('./json/data.json')
                     precio,
                 } = producto; // Desestructuracion producto
 
-                // const productoCarrito = productosCarrito.find((prodCarrito)=> prodCarrito.id === producto.id);
-                // if (productoCarrito){
-                //     // cantidad ++
+                const productoCarrito = productosCarrito.find((prodCarrito) => prodCarrito.id === producto.id);
+                if (productoCarrito) {
 
-                //     productosCarrito.splice(0,1);
-                //     productosCarrito.push(new ProductoCarrito(id, nombre, (precio*cantidad), cantidad ++));
+                    let posicionProducto = productosCarrito.findIndex(((prodCarrito) => prodCarrito.id === producto.id))
 
-                //     contadorCarrito++;
-                //     totalCarrito += precio;
+                    cantidad = productoCarrito.cantidad + 1;
 
-    
-                //     document.getElementById("carritoContador").innerHTML = contadorCarrito; //hacer contador de carrito
-    
-                //     localStorage.setItem('producto', JSON.stringify(productosCarrito));
-                //     localStorage.setItem('pagar', totalCarrito);
-                //     localStorage.setItem('contadorCarrito', contadorCarrito);
-                //     console.log('primero',contadorCarrito);
-
-                //     Swal.fire({
-                //         title: 'Agregado al carrito',
-                //         icon: 'success',
-                //         title: 'Agregaste ' + nombre + ' al carrito!',
-                //         showConfirmButton: false,
-                //         timer: 1500,
-                //     })
-                    
-                // } else {                 
-                
-                    productosCarrito.push(new ProductoCarrito(id, nombre, precio)); // Agregando productos al array del carrito
+                    productosCarrito[posicionProducto] = new ProductoCarrito(id, nombre, (precio * cantidad), cantidad);
 
                     contadorCarrito++;
                     totalCarrito += precio;
@@ -88,16 +65,38 @@ fetch('./json/data.json')
                     localStorage.setItem('producto', JSON.stringify(productosCarrito));
                     localStorage.setItem('pagar', totalCarrito);
                     localStorage.setItem('contadorCarrito', contadorCarrito);
-                    console.log('segundo',contadorCarrito);
+                    console.log('primero', contadorCarrito);
 
                     Swal.fire({
-                    title: 'Agregado al carrito',
-                    icon: 'success',
-                    title: 'Agregaste ' + nombre + ' al carrito!',
-                    showConfirmButton: false,
-                    timer: 1500,
+                        title: 'Agregado al carrito',
+                        icon: 'success',
+                        title: 'Agregaste ' + nombre + ' al carrito!',
+                        showConfirmButton: false,
+                        timer: 1500,
                     })
-                // }
+
+                } else {
+                    cantidad = 1;
+
+                    productosCarrito.push(new ProductoCarrito(id, nombre, precio, cantidad)); // Agregando productos al array del carrito
+
+                    contadorCarrito++;
+                    totalCarrito += precio;
+
+                    document.getElementById("carritoContador").innerHTML = contadorCarrito; //hacer contador de carrito
+
+                    localStorage.setItem('producto', JSON.stringify(productosCarrito));
+                    localStorage.setItem('pagar', totalCarrito);
+                    localStorage.setItem('contadorCarrito', contadorCarrito);
+
+                    Swal.fire({
+                        title: 'Agregado al carrito',
+                        icon: 'success',
+                        title: 'Agregaste ' + nombre + ' al carrito!',
+                        showConfirmButton: false,
+                        timer: 1500,
+                    })
+                }
 
 
             })

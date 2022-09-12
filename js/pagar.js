@@ -6,7 +6,7 @@ document.getElementById("carritoContador").innerHTML = localStorage.getItem('con
 
 const span = document.createElement('span');
 span.innerHTML = `
-    <span>${totalPagar*1.21}</span>
+    <span>${totalPagar}</span>
     `
 domPagar.append(span);
 
@@ -18,12 +18,12 @@ if (productosCarritoParse == null) {
     document.getElementById("totalAPagar").innerHTML = totalCarrito;
     document.getElementById("carritoContador").innerHTML = contadorCarrito;
 }
-console.log(productosCarritoParse);
 
 productosCarritoParse.forEach(producto => {
     const tr = document.createElement('tr');
     tr.innerHTML = `
              <td>${producto.nombre}</td>
+             <td>${producto.cantidad}</td>
              <td>${producto.precio}</td>
              `
     domCarrito.append(tr);
@@ -86,6 +86,7 @@ eventoBotonPagar.addEventListener("click", () => {
             domCarrito.innerHTML = `
           <tr>
           <th>PRODUCTO</th>
+          <th>CANTIDAD</th>
           <th>PRECIO</th>
           </tr>
           `;
